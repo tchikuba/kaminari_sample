@@ -2,4 +2,5 @@
 article<%= n %>:
   title: <%= "title#{n}" %>
   body: <%= "body#{n}" %>
+  keywords: <%= "keywords#{n}, keywords#{n + 1}" %>
 <% end %>
