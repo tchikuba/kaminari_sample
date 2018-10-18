@@ -2,6 +2,15 @@ crumb :root do
   link "Home", root_path
 end
 
+crumb :articles do
+  link '記事一覧', articles_path
+end
+
+crumb :article do |article|
+  link article.title, article_path(article)
+  parent :articles
+end
+
 # crumb :projects do
 #   link "Projects", projects_path
 # end
