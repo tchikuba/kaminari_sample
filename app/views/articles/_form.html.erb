@@ -21,6 +21,12 @@
     <%= form.text_area :body %>
   </div>
 
+  <div class="field">
+    <%= form.label :image_data %>
+    <%= form.hidden_field :image, value: article.cached_image_data %>
+    <%= form.file_field :image %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
