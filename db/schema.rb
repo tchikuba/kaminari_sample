@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2018_11_21_071428) do
     t.string "keywords"
     t.string "image_id"
     t.string "image_filename"
-    t.string "image_content_size"
+    t.string "image_size"
     t.string "image_content_type"
   end
 
